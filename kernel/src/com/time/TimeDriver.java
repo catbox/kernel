@@ -20,7 +20,7 @@ public class TimeDriver {
 			stringBuilder.append(timeStr);
 			stringBuilder.append(date);
 			
-			System.out.println("Time is: " + stringBuilder.toString());
+			System.out.println("Time Runner: " + stringBuilder.toString());
 		}
 
 	}
