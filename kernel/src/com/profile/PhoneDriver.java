@@ -19,10 +19,10 @@ public class PhoneDriver {
 		
 		String phoneNumber3 = "";
 		if(isEmpty(phoneNumber3)) {
-			System.out.println("Phone Number 3 is empty");
+			System.out.println("Phone Number 3 is empty!");
 		}
 		else {
-			System.out.println("Phone Number 3 is not empty");
+			System.out.println("Phone Number 3 is not empty!");
 		}
 		
 	}
