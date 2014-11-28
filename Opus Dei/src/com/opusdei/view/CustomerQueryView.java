@@ -69,7 +69,7 @@ public class CustomerQueryView {
 		
 		// UI components
 		customerQueryLabel = new JLabel(CoreConstants.QUERY_LABEL);
-		customerComboBox = new JComboBox(CustomerConstants.CUSTOMER_QUERY_FIELDS);
+		customerComboBox = new JComboBox<String>(CustomerConstants.CUSTOMER_QUERY_FIELDS);
 		customerValueLabel = new JLabel(CoreConstants.VALUE_LABEL);
 		customerTextField = new JTextField(CoreConstants.TEXTFIELD_SIZE);
 		customerQueryButton = new JButton(CoreConstants.QUERY_BUTTON);

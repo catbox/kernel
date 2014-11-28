@@ -23,6 +23,8 @@ import com.opusdei.view.CustomerUpdateView;
 
 public class CustomerUpdateUI extends JFrame {
 
+	private static final long serialVersionUID = 1L;
+
 	public CustomerUpdateUI(Customer customer, CustomerDAO customerDAO) {
 
    	   // Create and set up the window.

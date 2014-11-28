@@ -64,7 +64,7 @@ public class BooleanProperty
 	 *  Yes, True,  On,  1
 	 * </PRE>
 	 */
-	private static final Set trueSet = new HashSet(Arrays.asList(new String[]
+	private static final Set trueSet = new HashSet<String>(Arrays.asList(new String[]
 	{
 		YES.toUpperCase(), Y.toUpperCase(), CoreConstants.ON.toUpperCase(), TRUE.toUpperCase(), ONE, UP.toUpperCase()
 	}));
@@ -75,7 +75,7 @@ public class BooleanProperty
 	 *  No,  False, Off, 0
 	 * </PRE>
 	 */
-	private static final Set falseSet = new HashSet(Arrays.asList(new String[]
+	private static final Set falseSet = new HashSet<String>(Arrays.asList(new String[]
 	{
 		NO.toUpperCase(), N.toUpperCase(), CoreConstants.OFF.toUpperCase(), FALSE.toUpperCase(), ZERO, DOWN.toUpperCase()
 	}));

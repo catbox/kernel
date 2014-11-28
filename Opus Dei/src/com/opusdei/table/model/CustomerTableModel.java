@@ -26,6 +26,7 @@ import com.opusdei.transfer.Customer;
 
 public class CustomerTableModel extends AbstractTableModel {
 	
+	private static final long serialVersionUID = 1L;
 	protected final int COLUMN_COUNT = 17;
 	protected List<Customer> rows;
 	protected ChangeListener listener;

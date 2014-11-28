@@ -31,6 +31,7 @@ import com.opusdei.dao.DatabaseConfig;
 
 public class DatabaseDialogView extends JDialog {
 
+	private static final long serialVersionUID = 1L;
 	/**
 	 * @uml.property  name="mainPanel"
 	 */

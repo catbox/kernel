@@ -37,6 +37,7 @@ public class DatabaseController {
 			String schema = databaseDialogView.getDefaultSchemaTxtFld().getText().trim();
 			String port = databaseDialogView.getPortTxtFld().getText().trim();
 			String username = databaseDialogView.getUserNameTxtFld().getText().trim();
+			@SuppressWarnings("deprecation")
 			String password = databaseDialogView.getPasswordTxtFld().getText().toString().trim();
 			
 			// Set the property object
