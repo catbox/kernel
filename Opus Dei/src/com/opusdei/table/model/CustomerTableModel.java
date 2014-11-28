@@ -44,6 +44,7 @@ public class CustomerTableModel extends AbstractTableModel {
 	/**
 	 * Get the type associated with the column
 	 */
+	@SuppressWarnings("unchecked")
 	public Class getColumnClass(int columnIndex) {		
 		switch(columnIndex) {
 			case 0:
@@ -222,6 +223,7 @@ public class CustomerTableModel extends AbstractTableModel {
 	 * @param columnIdx
 	 * @param direction
 	 */
+	@SuppressWarnings("unchecked")
 	public synchronized void sortBy(final int columnIndex, final int direction) {
 		if(direction == SORT_DESCENDING) {
 			Collections.sort(rows, new Comparator() {
