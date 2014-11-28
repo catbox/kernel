@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmi:id="_zulsEFCYEeC8LZRK0M4F0g" type="Ecore" name="MVC.ecore_diagram" measurementUnit="Pixel">
+  <children xmi:type="notation:Shape" xmi:id="_1OQIAFCYEeC8LZRK0M4F0g" type="2001">
+    <children xmi:type="notation:DecorationNode" xmi:id="_1OQIAlCYEeC8LZRK0M4F0g" type="5001"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_1OQIA1CYEeC8LZRK0M4F0g" visible="false" type="7001">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_1OQIBFCYEeC8LZRK0M4F0g"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_1OQIBVCYEeC8LZRK0M4F0g"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_1OQIBlCYEeC8LZRK0M4F0g" visible="false" type="7002">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_1OQIB1CYEeC8LZRK0M4F0g"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_1OQICFCYEeC8LZRK0M4F0g"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_1OQICVCYEeC8LZRK0M4F0g" visible="false" type="7003">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_1OQIClCYEeC8LZRK0M4F0g"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_1OQIC1CYEeC8LZRK0M4F0g"/>
+    </children>
+    <element xmi:type="ecore:EClass" href="MVC.ecore#//Model"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_1OQIAVCYEeC8LZRK0M4F0g" x="108" y="192" width="64"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_185WsFCYEeC8LZRK0M4F0g" type="2001">
+    <children xmi:type="notation:DecorationNode" xmi:id="_185WslCYEeC8LZRK0M4F0g" type="5001"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_185Ws1CYEeC8LZRK0M4F0g" visible="false" type="7001">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_185WtFCYEeC8LZRK0M4F0g"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_185WtVCYEeC8LZRK0M4F0g"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_185WtlCYEeC8LZRK0M4F0g" visible="false" type="7002">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_185Wt1CYEeC8LZRK0M4F0g"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_185WuFCYEeC8LZRK0M4F0g"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_185WuVCYEeC8LZRK0M4F0g" visible="false" type="7003">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_185WulCYEeC8LZRK0M4F0g"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_185Wu1CYEeC8LZRK0M4F0g"/>
+    </children>
+    <element xmi:type="ecore:EClass" href="MVC.ecore#//View"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_185WsVCYEeC8LZRK0M4F0g" x="432" y="192" width="61"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_4os1oFCYEeC8LZRK0M4F0g" type="2001">
+    <children xmi:type="notation:DecorationNode" xmi:id="_4os1olCYEeC8LZRK0M4F0g" type="5001"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_4os1o1CYEeC8LZRK0M4F0g" visible="false" type="7001">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_4os1pFCYEeC8LZRK0M4F0g"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_4os1pVCYEeC8LZRK0M4F0g"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_4os1plCYEeC8LZRK0M4F0g" visible="false" type="7002">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_4os1p1CYEeC8LZRK0M4F0g"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_4os1qFCYEeC8LZRK0M4F0g"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_4os1qVCYEeC8LZRK0M4F0g" visible="false" type="7003">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_4os1qlCYEeC8LZRK0M4F0g"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_4os1q1CYEeC8LZRK0M4F0g"/>
+    </children>
+    <element xmi:type="ecore:EClass" href="MVC.ecore#//Controller"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_4os1oVCYEeC8LZRK0M4F0g" x="252" y="108" width="85"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_MjDrQFCZEeC8LZRK0M4F0g" type="Text" description="1) Model model = new Model();">
+    <children xmi:type="notation:BasicDecorationNode" xmi:id="_MjDrQlCZEeC8LZRK0M4F0g" type="DiagramName">
+      <element xsi:nil="true"/>
+    </children>
+    <children xmi:type="notation:BasicDecorationNode" xmi:id="_MjDrQ1CZEeC8LZRK0M4F0g" type="Description">
+      <element xsi:nil="true"/>
+    </children>
+    <element xsi:nil="true"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_MjDrQVCZEeC8LZRK0M4F0g" x="48" y="348"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_TBBNMFCZEeC8LZRK0M4F0g" type="Text" description="2) View view = new View(model);">
+    <children xmi:type="notation:BasicDecorationNode" xmi:id="_TBBNMlCZEeC8LZRK0M4F0g" type="DiagramName">
+      <element xsi:nil="true"/>
+    </children>
+    <children xmi:type="notation:BasicDecorationNode" xmi:id="_TBBNM1CZEeC8LZRK0M4F0g" type="Description">
+      <element xsi:nil="true"/>
+    </children>
+    <element xsi:nil="true"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_TBBNMVCZEeC8LZRK0M4F0g" x="48" y="372"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_ayRjAFCZEeC8LZRK0M4F0g" type="Text" description="3) Controller controller = new Controller(model, view);">
+    <children xmi:type="notation:BasicDecorationNode" xmi:id="_ayRjAlCZEeC8LZRK0M4F0g" type="DiagramName">
+      <element xsi:nil="true"/>
+    </children>
+    <children xmi:type="notation:BasicDecorationNode" xmi:id="_ayRjA1CZEeC8LZRK0M4F0g" type="Description">
+      <element xsi:nil="true"/>
+    </children>
+    <element xsi:nil="true"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ayRjAVCZEeC8LZRK0M4F0g" x="48" y="396"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_MuHRcFCpEeC8LZRK0M4F0g" type="Note" description="The model represents data and the rules that govern access to and updates of the data." fillColor="13369343" transparency="0" lineColor="6737151" lineWidth="1">
+    <children xmi:type="notation:BasicDecorationNode" xmi:id="_MuHRdFCpEeC8LZRK0M4F0g" type="DiagramName">
+      <element xsi:nil="true"/>
+    </children>
+    <children xmi:type="notation:BasicDecorationNode" xmi:id="_MuHRdVCpEeC8LZRK0M4F0g" type="Description">
+      <element xsi:nil="true"/>
+    </children>
+    <styles xmi:type="notation:TextStyle" xmi:id="_MuHRcVCpEeC8LZRK0M4F0g"/>
+    <styles xmi:type="notation:LineTypeStyle" xmi:id="_MuHRclCpEeC8LZRK0M4F0g"/>
+    <element xsi:nil="true"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_MuHRc1CpEeC8LZRK0M4F0g" x="48" y="252" width="181"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_S9dvoFCpEeC8LZRK0M4F0g" type="Note" description="The controller translates the user's interactions with the view into actions that the model will perform. " fillColor="13369343" transparency="0" lineColor="6737151" lineWidth="1">
+    <children xmi:type="notation:BasicDecorationNode" xmi:id="_S9dvpFCpEeC8LZRK0M4F0g" type="DiagramName">
+      <element xsi:nil="true"/>
+    </children>
+    <children xmi:type="notation:BasicDecorationNode" xmi:id="_S9dvpVCpEeC8LZRK0M4F0g" type="Description">
+      <element xsi:nil="true"/>
+    </children>
+    <styles xmi:type="notation:TextStyle" xmi:id="_S9dvoVCpEeC8LZRK0M4F0g"/>
+    <styles xmi:type="notation:LineTypeStyle" xmi:id="_S9dvolCpEeC8LZRK0M4F0g"/>
+    <element xsi:nil="true"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_S9dvo1CpEeC8LZRK0M4F0g" x="192" y="24" width="193"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_cowwQFCpEeC8LZRK0M4F0g" type="Note" description="The view renders the contents of a model. " fillColor="13369343" transparency="0" lineColor="6737151" lineWidth="1">
+    <children xmi:type="notation:BasicDecorationNode" xmi:id="_cowwRFCpEeC8LZRK0M4F0g" type="DiagramName">
+      <element xsi:nil="true"/>
+    </children>
+    <children xmi:type="notation:BasicDecorationNode" xmi:id="_cowwRVCpEeC8LZRK0M4F0g" type="Description">
+      <element xsi:nil="true"/>
+    </children>
+    <styles xmi:type="notation:TextStyle" xmi:id="_cowwQVCpEeC8LZRK0M4F0g"/>
+    <styles xmi:type="notation:LineTypeStyle" xmi:id="_cowwQlCpEeC8LZRK0M4F0g"/>
+    <element xsi:nil="true"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cowwQ1CpEeC8LZRK0M4F0g" x="408" y="252" width="121"/>
+  </children>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_zulsEVCYEeC8LZRK0M4F0g"/>
+  <element xmi:type="ecore:EPackage" href="MVC.ecore#/"/>
+  <edges xmi:type="notation:Connector" xmi:id="__VjvMFCYEeC8LZRK0M4F0g" type="4002" source="_4os1oFCYEeC8LZRK0M4F0g" target="_1OQIAFCYEeC8LZRK0M4F0g">
+    <children xmi:type="notation:DecorationNode" xmi:id="__VjvM1CYEeC8LZRK0M4F0g" type="6001">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="__VjvNFCYEeC8LZRK0M4F0g" x="-7" y="14"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="__VjvNVCYEeC8LZRK0M4F0g" visible="false" type="6003">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="__VjvNlCYEeC8LZRK0M4F0g" y="60"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="__VjvMVCYEeC8LZRK0M4F0g"/>
+    <element xmi:type="ecore:EReference" href="MVC.ecore#//Controller/uses"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="__VjvMlCYEeC8LZRK0M4F0g" points="[-36, 23, 80, -54]$[-104, 71, 12, -6]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_zfNO0F-XEeCvdpJJeU7FMA" id="(0.013888888888888888,0.975)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="__VjvN1CYEeC8LZRK0M4F0g" id="(0.7692307692307693,0.36538461538461536)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_A3whwFCZEeC8LZRK0M4F0g" type="4002" source="_4os1oFCYEeC8LZRK0M4F0g" target="_185WsFCYEeC8LZRK0M4F0g">
+    <children xmi:type="notation:DecorationNode" xmi:id="_A3whw1CZEeC8LZRK0M4F0g" type="6001">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_A3whxFCZEeC8LZRK0M4F0g" x="-8" y="-13"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_A3whxVCZEeC8LZRK0M4F0g" visible="false" type="6003">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_A3whxlCZEeC8LZRK0M4F0g" y="60"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_A3whwVCZEeC8LZRK0M4F0g"/>
+    <element xmi:type="ecore:EReference" href="MVC.ecore#//Controller/uses.1"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_A3whwlCZEeC8LZRK0M4F0g" points="[36, 14, -142, -70]$[183, 58, 5, -26]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_s5gGIV-XEeCvdpJJeU7FMA" id="(0.9583333333333334,0.975)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_Bwij4FCZEeC8LZRK0M4F0g" type="4002" source="_185WsFCYEeC8LZRK0M4F0g" target="_1OQIAFCYEeC8LZRK0M4F0g">
+    <children xmi:type="notation:DecorationNode" xmi:id="_Bwij41CZEeC8LZRK0M4F0g" type="6001">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_Bwij5FCZEeC8LZRK0M4F0g" x="2" y="-17"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_Bwij5VCZEeC8LZRK0M4F0g" visible="false" type="6003">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_Bwij5lCZEeC8LZRK0M4F0g" y="60"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_Bwij4VCZEeC8LZRK0M4F0g"/>
+    <element xmi:type="ecore:EReference" href="MVC.ecore#//View/uses"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_Bwij4lCZEeC8LZRK0M4F0g" points="[-22, 0, 270, 0]$[-282, 0, 10, 0]"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Bwij51CZEeC8LZRK0M4F0g" id="(0.8076923076923077,0.5)"/>
+  </edges>
+</notation:Diagram>

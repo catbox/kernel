@@ -1,0 +1,23 @@
+CREATE SCHEMA nom;
+
+DROP TABLE IF EXISTS `nom`.`customers`;
+
+CREATE TABLE  `nom`.`customers` (
+  `customerId` int(10) unsigned zerofill NOT NULL AUTO_INCREMENT,
+  `customerName` varchar(45) DEFAULT 'NA',
+  `firstName` varchar(45) DEFAULT 'NA',
+  `middleName` varchar(45) DEFAULT 'NA',
+  `lastName` varchar(45) DEFAULT 'NA',
+  `street` varchar(45) DEFAULT NULL,
+  `postalCode` varchar(45) DEFAULT NULL,
+  `city` varchar(45) DEFAULT NULL,
+  `state` varchar(45) DEFAULT NULL,
+  `country` varchar(45) DEFAULT NULL,
+  `primaryPhoneNumber` varchar(45) DEFAULT NULL,
+  `secondaryPhoneNumber` varchar(45) DEFAULT NULL,
+  `faxNumber` varchar(45) DEFAULT NULL,
+  `email` varchar(45) DEFAULT NULL,
+  `website` varchar(45) DEFAULT NULL,
+  `dateOfCreation` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  PRIMARY KEY (`customerId`)
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
