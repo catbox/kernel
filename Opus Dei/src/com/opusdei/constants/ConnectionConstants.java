@@ -16,7 +16,7 @@ public class ConnectionConstants {
 	public static final String USERNAME = "root";
 	public static final String PASSWORD = "admin";
 		
-	public static final String DB_CONFIG_FILE_LOCATION = ".\\resources\\database\\Database.properties";
+	public static final String DB_CONFIG_FILE_LOCATION = "./resources/database/Database.properties";
 	
 	public static final int TIME_OUT = 5; // Time out after 5 seconds
 }
