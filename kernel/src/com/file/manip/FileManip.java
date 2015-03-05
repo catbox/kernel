@@ -62,6 +62,29 @@ public class FileManip {
 		}
 	}
 	
+	// Delete the user's directory
+	public static boolean deleteUserDirectory(String userDirectory) {
+		 return deleteUserDirectoryContent(new File(rootPathStr + File.separator + userDirectory));
+	}
+	
+	// Delete the user's directory content
+	private static boolean deleteUserDirectoryContent(File directoryPath) {
+		if(directoryPath.exists()) {
+	      File[] userDirectoryContent = directoryPath.listFiles();
+	      for(int i=0; i<userDirectoryContent.length; i++) {
+	    	 // Found a directory - Call back the method recursively
+	         if(userDirectoryContent[i].isDirectory()) {
+	           deleteUserDirectoryContent(userDirectoryContent[i]);
+	         }
+	         // Found a file - Delete it
+	         else {
+	           userDirectoryContent[i].delete();
+	         }
+	      }
+	    }
+	    return(directoryPath.delete());
+	}
+	
 	// Create the user's wish list directory
 	public static void createUserWishListDirectory(String userDirectory, String wishlist) {
 		
@@ -76,47 +99,23 @@ public class FileManip {
 		}
 	}
 	
-	// Delete the user's directory
-	public static void deleteUserDirectory(String userDirectory) {
-		 deleteDirectory(new File(rootPathStr + File.separator + userDirectory));
-	}
-	
-	// Delete the content of the user's directory
-	private static boolean deleteDirectory(File directoryPath) {
-		if(directoryPath.exists()) {
-	      File[] userDirectoryContent = directoryPath.listFiles();
-	      for(int i=0; i<userDirectoryContent.length; i++) {
-	    	 // Found a directory - Call back the method recursively
-	         if(userDirectoryContent[i].isDirectory()) {
-	           deleteDirectory(userDirectoryContent[i]);
-	         }
-	         // Found a file - Delete it
-	         else {
-	           userDirectoryContent[i].delete();
-	         }
-	      }
-	    }
-	    return(directoryPath.delete());
-	}
-
-	
 	// Delete the user's wish list directory
 	public static void deleteUserWishListDirectory(String userDirectory, String wishlist) {
-		deleteFiles(new File(rootPathStr + File.separator + userDirectory + File.separator + wishlist));
+		deleteUserWishListDirectoryContent(new File(rootPathStr + File.separator + userDirectory + File.separator + wishlist));
 	}
 	
-	// Delete the files of the user's wish list directory
-	private static boolean deleteFiles(File directoryPath) {
+	// Delete the user's wish list directory content
+	private static boolean deleteUserWishListDirectoryContent(File directoryPath) {
 		if(directoryPath.exists()) {
 	      File[] userDirectoryContent = directoryPath.listFiles();
 	      for(int i=0; i<userDirectoryContent.length; i++) {
-	    	   // Delete a file
 	           userDirectoryContent[i].delete();
 	         }
 	      }
 	    return(directoryPath.delete());
 	}
 	
+	// The Driver
 	public static void main(String[] args) {
 		
 		FileManip.createRootDirectory();
@@ -124,21 +123,21 @@ public class FileManip {
 		// User1 home directory
 		FileManip.createUserDirectory("User1");
 		// User1 creates a wish list - spring break
-		FileManip.createUserWishListDirectory("User1", "Spring Break - Cuba 2015");
+		FileManip.createUserWishListDirectory("User1", "Spring Break - Cuba");
 		// User1 creates a wish list - easter
 		FileManip.createUserWishListDirectory("User1", "Easter");
 		
 		// User2 home directory
 		FileManip.createUserDirectory("User2");
 		// User2 creates a wish list - spring break
-		FileManip.createUserWishListDirectory("User2", "Spring Break - The Real Cancun 2015");
+		FileManip.createUserWishListDirectory("User2", "Spring Break - The Real Cancun");
 		// User2 creates a wish list - easter
 		FileManip.createUserWishListDirectory("User2", "Easter Bunnies");
 		
 		// User3 home directory
 		FileManip.createUserDirectory("User3");
 		// User3 creates a wish list - spring break
-		FileManip.createUserWishListDirectory("User3", "Spring Break - Burn Valadero 2015");
+		FileManip.createUserWishListDirectory("User3", "Spring Break - Burn Valadero");
 		// User3 creates a wish list - easter
 		FileManip.createUserWishListDirectory("User3", "Easter Pink Bunnies");
 
