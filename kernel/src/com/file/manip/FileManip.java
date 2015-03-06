@@ -19,19 +19,21 @@ import com.constants.FileManipConstants;
 
 public class FileManip {
 
-	// Root path
-	private final static File ROOT_PATH = new File(FileManipConstants.USER_DATA_FILE_LOCATION);
-	// Root path as a string
-	private static String rootPathStr;
+	// Property file location
+	private final static File PROPERTY_FILE_LOCATION = new File(FileManipConstants.USER_DATA_FILE_LOCATION);
+	// Directory root path
+	private static String rootDirectoryPath;
 	// Property file
 	private static Properties properties;
-	
+	// Root Directory
 	private static File rootDirectory;
+	// User Directory
 	private static File userDirectory;
+	// User Directory containing a wish list directory
 	private static File userWishListDirectory;
-	
+	// Array of valid file extension (suffix)
 	public static String[] fileExtensionArray = {"BMP", "GIF", "ICO", "JFIF", "JPEG", "JPG", "PNG", "TIF", "TIFF"};
-	
+	// List of valid file extension (suffix)
 	public static List<String> fileExtensionList = new ArrayList<String>(Arrays.asList(fileExtensionArray));
 	
 	/**
@@ -40,12 +42,12 @@ public class FileManip {
 	public static void createRootDirectory() {
 		
 		try {
-			InputStream rootPathStream = new FileInputStream(ROOT_PATH);
+			InputStream rootPathStream = new FileInputStream(PROPERTY_FILE_LOCATION);
 			properties = new Properties();
 			properties.load(rootPathStream);
-			rootPathStr = properties.getProperty(FileManipConstants.ROOT);
+			rootDirectoryPath = properties.getProperty(FileManipConstants.ROOT);
 			
-			rootDirectory = new File(rootPathStr);
+			rootDirectory = new File(rootDirectoryPath);
 			
 			if(!rootDirectory.exists()) {
 				rootDirectory.mkdir();
@@ -74,7 +76,7 @@ public class FileManip {
 		
 		createRootDirectory();
 		
-		userDirectory = new File(rootPathStr + File.separator + userRootDirectory);
+		userDirectory = new File(rootDirectoryPath + File.separator + userRootDirectory);
 		
 		if(!userDirectory.exists()) {
 			userDirectory.mkdir();
@@ -88,7 +90,7 @@ public class FileManip {
 	/**
 	 * Verify if file extension is valid
 	 * @param extension
-	 * @return
+	 * @return true if file extension is valid else false
 	 */
 	private static boolean isExtensionValid(String extension) {
 	
@@ -123,7 +125,7 @@ public class FileManip {
 			System.out.println("File Extension: " + fileSuffix);
 			
 			if(isExtensionValid(fileSuffix)) {
-				File userProfileLocation = new File(rootPathStr + File.separator + user + File.separator + fileName);
+				File userProfileLocation = new File(rootDirectoryPath + File.separator + user + File.separator + fileName);
 				boolean result = ImageIO.write(image, fileSuffix, userProfileLocation);
 				if(result) {
 					System.out.println("The profile of " + user + " was succefully loaded at: " + userProfileLocation);
@@ -147,16 +149,16 @@ public class FileManip {
 	/**
 	 * Delete the user's directory
 	 * @param userDirectory
-	 * @return
+	 * @return true if deletion of the user directory was successful else false
 	 */
 	public static boolean deleteUserDirectory(String userDirectory) {
-		 return deleteUserDirectoryContent(new File(rootPathStr + File.separator + userDirectory));
+		 return deleteUserDirectoryContent(new File(rootDirectoryPath + File.separator + userDirectory));
 	}
 	
 	/**
 	 * Delete the user's directory content
 	 * @param directoryPath
-	 * @return
+	 * @return true if deletion of the user directory was successful else false
 	 */
 	private static boolean deleteUserDirectoryContent(File directoryPath) {
 		if(directoryPath.exists()) {
@@ -182,7 +184,7 @@ public class FileManip {
 	 */
 	public static void createUserWishListDirectory(String userDirectory, String wishlist) {
 		
-		userWishListDirectory = new File(rootPathStr + File.separator + userDirectory + File.separator + wishlist);
+		userWishListDirectory = new File(rootDirectoryPath + File.separator + userDirectory + File.separator + wishlist);
 		
 		if(!userWishListDirectory.exists()) {
 			userWishListDirectory.mkdir();
@@ -196,16 +198,16 @@ public class FileManip {
 	/**
 	 * Delete the user's wish list directory
 	 * @param userDirectory
-	 * @param wishlist
+	 * @param true if deletion of the user wish list directory was successful else false
 	 */
-	public static void deleteUserWishListDirectory(String userDirectory, String wishlist) {
-		deleteUserWishListDirectoryContent(new File(rootPathStr + File.separator + userDirectory + File.separator + wishlist));
+	public static boolean deleteUserWishListDirectory(String userDirectory, String wishlist) {
+		return deleteUserWishListDirectoryContent(new File(rootDirectoryPath + File.separator + userDirectory + File.separator + wishlist));
 	}
 	
 	/**
 	 * Delete the user's wish list directory content
 	 * @param directoryPath
-	 * @return
+	 * @return true if deletion of the user wish list directory was successful else false
 	 */
 	private static boolean deleteUserWishListDirectoryContent(File directoryPath) {
 		if(directoryPath.exists()) {
@@ -252,8 +254,16 @@ public class FileManip {
 		FileManip.deleteUserWishListDirectory("User3", "Easter Pink Bunnies");
 		*/
 		
-		uploadUserProfileImage("User1", "C:\\HiveImages\\Format\\Uppercase\\dsotm.JPG");
-		uploadUserProfileImage("User1", "C:\\HiveImages\\Format\\Lowercase\\dsotm.jpg");		
+		// Create root directory
+		FileManip.createRootDirectory();	
+		// User1 home directory
+		FileManip.createUserDirectory("User1");
+		// User1 creates a wish list - spring break
+		FileManip.createUserWishListDirectory("User1", "Spring Break - Cuba");
+		// User1 creates a wish list - easter
+		FileManip.createUserWishListDirectory("User1", "Easter");
+		// Upload user profile image
+		uploadUserProfileImage("User1", "C:\\HiveImages\\Format\\Uppercase\\dsotm.JPG");		
 	}
 
 }
