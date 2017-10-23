@@ -26,7 +26,7 @@ public class SemesterServlet extends HttpServlet {
 	public void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         int page = 1;
-        int recordsPerPage = 5;
+        int recordsPerPage = 4;
         if(request.getParameter("page") != null) {
             page = Integer.parseInt(request.getParameter("page"));
         }
